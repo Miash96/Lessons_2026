@@ -1,0 +1,39 @@
+#ukraine {
+    color:chocolate;
+}
+* {
+    color:black;
+}
+h1,h2 {
+    color: green;
+}
+h3 {
+    color: blue;
+}
+.article .description {
+    color: red;
+}
+[class*="hist"] {
+    color: yellowgreen;
+}
+.history-ua > p {
+color: goldenrod;
+}
+.history-ua ~ p {
+    color: blueviolet;
+}
+.geolocation + p {
+    color: orange;
+}
+.list-location > li {
+    color: royalblue;
+}
+.list-location .geo-center {
+    color: red;
+}
+.location p {
+    color: green;
+}
+.foot-link {
+    color: blueviolet;
+}
