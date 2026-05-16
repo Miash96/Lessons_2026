@@ -1,0 +1,111 @@
+body {
+    font-family: "Barlow", sans-serif;
+}
+.wrapper {
+    min-height: 100%;
+	overflow: clip;
+}
+.header {
+    position: sticky;
+    top: 0;
+    background-color: gold;
+    z-index: 100;
+    margin-bottom: 250px;
+}
+.menu {
+    text-align: center;
+}
+.menu__item {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    padding: 20px;
+    border: 1px solid black;
+}
+.menu__item:hover .menu__link {
+    text-decoration: underline;
+}
+.menu__item:not(:last-child) {
+    margin-right: 10px;
+}
+.menu__submenu {
+    position: absolute;
+    left: 0;
+	top: 100%;
+	width: 300px;
+	background-color: #17ef10;
+}
+.submenu {
+    opacity: 0;
+    visibility: hidden;
+}
+.menu__item:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+.submenu__item {
+    padding: 20px;
+    border: 1px solid black;
+    position: relative;
+    padding: 20px;
+}
+.submenu__item:hover .submenu__link {
+    text-decoration: underline;
+}
+.submenu__sub-submenu {
+    position: absolute;
+	left: 100%;
+    top: 0;
+	width: 200px;
+	background-color: #f53b07;
+}
+.sub-submenu__item {
+     border: 1px solid black;
+     padding: 20px;
+}
+.sub-submenu {
+    opacity: 0;
+    visibility: hidden;
+}
+.sub-submenu__link:hover {
+      text-decoration: underline;
+}
+.submenu__item:hover .sub-submenu {
+    opacity: 1;
+    visibility: visible;
+}
+/* макет */
+.main {
+    background-color:#030303;
+}
+.main__container {
+    color: #f9efec;
+    background-color: #1a1a1a;
+    margin-left: 86px;
+    max-width: 834px;
+    padding: 24px 32px;
+    line-height: 1.5;
+    border-radius: 12px;
+}
+.main__title {
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.list__item {
+    padding-left: 26px;
+    position: relative;
+}
+.list__item::before {
+    content: "";
+    position: absolute;
+    background: url(../img/Frame-81.png) no-repeat center / contain;
+    width: 16px; 
+    height: 20px;
+    min-height: 12px;
+    left: -10px;
+}
+.list__item:not(:last-child) {
+   margin-bottom: 12px;
+}
